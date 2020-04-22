@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+}
+
+.container{width:100%;display:flex;justify-content: center;}
+
+header{/* flex-basis: 90%; *//* border-bottom: 1px solid grey; *//* padding: 10px 0; */}
+
+
+.title{
+
+}
+.appbody{
+    
+}
+
+.menuContainer {
+    /* display: flex; */
+    font-family: sans-serif;
+    background: transparent;
+}
+
+.menu{
+
+display: flex;
+}
+
+ul.menu {
+    list-style: none;
+    /* justify-content: space-evenly; */
+    padding: 10px 0;
+}
+
+.menu li{
+    display: block;
+    padding: 12.5px 25px;
+    font-size: 17px;
+    letter-spacing: 1.25px;
+    border-right: 1px solid #ccc1c1;
+    flex-grow: 1;
+    cursor: pointer;
+    line-height: 1;
+}
+.menu li:last-child{
+    border-right: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: #088808;
+    /* padding: 10px 5px; */
+}
+
+.menu li:hover{
+    /* border-bottom: 0.5px solid grey; */
+    background-color: darkgreen;
+    border-radius: 2px;
+}
+.menu li:hover a{
+    color: #fff;
+}
+
+.menu li:hover .submenu{
+   display:flex;
+   visibility: visible;
+   opacity: 1;
+}
+
+.submenu li{
+
+font-size: 17px;
+
+padding: 4px 8px;
+
+border-right: none;
+
+border-bottom: 1px solid white;
+
+border-radius: 2px;
+
+background-color: darkgreen;
+
+line-height: 2.5;
+
+width: 12em;
+}
+
+.submenu li#separator{
+    border-bottom: 1.5px solid grey;
+    flex-basis: 61%;
+    padding: 0;
+    margin: 1px 0;
+    display: none;
+}
+
+.submenu li a{color: #fff;display: flex;text-decoration:none;padding: 0;}
+
+.submenu li:hover{
+    background-color: #ffffff;
+}
+
+.submenu li:hover a{
+    color:darkgreen ;
+}
+
+ul.submenu {
+    list-style: none;
+    flex-direction: column;
+    visibility: hidden;
+    border-radius: 0 0 5px 5px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    /* margin-top: 0.95rem; */
+    top: 52.5px;
+    /* left: 65px; */
+    display: none;
+    /* background-color: darkgreen; */
+    padding: 0;
+    /* margin: 0; */
+    /* padding-inline-start: 59px; */
+}
+
+span#liShortCut {
+    align-self: center;
+    color: gray;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: auto;
+}
+
+
+.submenu li:hover span#liShortCut{
+    color:darkgreen;
+}
