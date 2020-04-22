@@ -64,7 +64,7 @@ ul.menu {
     color: #fff;
 }
 
-.menu li:hover .submenu{
+.menu li:hover >.submenu{
    display:flex;
    visibility: visible;
    opacity: 1;
@@ -87,6 +87,8 @@ background-color: darkgreen;
 line-height: 2.5;
 
 width: 12em;
+
+/* display: flex; */
 }
 
 .submenu li#separator{
@@ -103,8 +105,9 @@ width: 12em;
     background-color: #ffffff;
 }
 
-.submenu li:hover a{
-    color:darkgreen ;
+.submenu li:hover,.submenu li a:hover{
+    color: white;
+    background-color: lightgray;
 }
 
 ul.submenu {
@@ -136,4 +139,16 @@ span#liShortCut {
 
 .submenu li:hover span#liShortCut{
     color:darkgreen;
+}
+
+
+ul.submenu ul.submenu {
+    position: absolute;
+    top: 14.5%;
+    top: 0;
+    left: 101%;
+}
+
+ul.submenu ul.submenu li {
+    /* background-color: red; */
 }
