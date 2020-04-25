@@ -84,6 +84,11 @@ border-bottom:0.5px solid #ccc;
     justify-content: flex-start;
     height: 30px;
     padding-right: 40px;
+        border-bottom: 0.5px solid #fff;
+}
+
+.menuContainer > ul li ul li:last-child{
+    border-bottom:none;
 }
 
 .menuContainer > ul li ul li:hover, .menuContainer > ul li ul li:hover > a {
@@ -119,10 +124,10 @@ ul.submenu::before {
 }
 
 .menu #separator{
-    height: 0px;
+    height: 0.5px;
     padding: 0;
     border: none;
-    border-bottom: 0.5px solid #fff;
+    border-bottom: 0.5px solid yellow;
     opacity: 1;
     transition: none;
 }
